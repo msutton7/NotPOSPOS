@@ -10,6 +10,7 @@ private:
   customerView display;
 public:
   keypadController(order *);
+  void update();
 };
 
 #endif

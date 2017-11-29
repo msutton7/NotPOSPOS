@@ -20,6 +20,8 @@ int main()
   keypadController keypad(&current);
   registerController ticket(&inventory,&current);
   ticket.processOrder();
+  current.addObserver(&ticket);
+  current.addObserver(&keypad);
 
   return 0;
 }
