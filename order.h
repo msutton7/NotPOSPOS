@@ -3,7 +3,7 @@
 #include "IOrder.h"
 #include "ObserverPattern.cpp"
 
-class order : public IOrder
+class order : public IOrder, public Observable
 {
   private:
     std::vector<item> itemList;
